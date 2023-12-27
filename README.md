@@ -15,7 +15,7 @@ Assumptions:
 (A)	**Connecting  to the Database**
 Connection to the oracle db is done using the connect function from oracledb module. The connect function takes the following parameters – username, password and data source name (a connection string specifying the database location). Oracledb.connection() returns a connection object which is being used to execute the query  - “Select * from tdk”.
 
-(B)**	Fetching column and row names and writing to a .tsv file**
+(B)**Fetching column and row names and writing to a tsv file**
 Column and rows are being fetched using the context management and using the cursor object to fetch result from the oracle db.
 The file is opened in the write mode and first operation is to write the column names followed by the row entries through iterations.
 Building and running Docker Image
