@@ -33,12 +33,8 @@ def main():
     sql = """select * from tdk"""
   
     with connection.cursor() as cursor:
-    #    print("Get all rows via an iterator")
-    #    for result in cursor.execute(sql):
-    #        print(result)
-    #    print()
-
-        # Fetaching all Cloumns from the Table tdk form a header in tsv
+    
+        # Fetaching all Columns from the Table tdk form a header in tsv
         print("Fetch all cloumns")
         cursor.execute(sql)
         columns = [col.name for col in cursor.description]
